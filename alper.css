@@ -1,0 +1,134 @@
+.container .alt {margin-top: 500px;}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:  #d5e82d;
+    animation: container 7s infinite;
+    animation-time-fucntion: linear;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+  }
+  @keyframes container{
+    0%{
+        transform: translateY(-100%);
+    }50%{
+        transform: translateY(-20%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+  }
+  .letra{
+    font-size: 600%;
+  }
+  .letrat{
+    font-size: 200%;
+  }
+  .first,.second,.tree,.for{
+    color: #fff;
+    opacity: 1;
+  }
+  .first{
+    animation: one 4s infinite;
+    animation-time-fucntion: linear;
+  }
+  @keyframes one{
+    0%{
+      transform: scale(.2);
+    }
+    50%{
+      transform: rotateX(360deg);
+    }
+    100%{
+      color: red;
+    }
+  }
+  .second{
+    animation: two 4s infinite;
+    animation-time-fucntion: linear;
+  }
+  @keyframes two{
+    0%{
+      transform: scale(.2);
+    }
+    50%{
+      transform: rotateY(360deg);
+    }
+    100%{
+      color: red;
+    }
+  }
+  .tree{
+    animation: tree 4s infinite;
+    animation-time-fucntion: linear;
+  }
+  @keyframes tree{
+    0%{
+      transform: scale(.2);
+    }
+    50%{
+      transform: rotateX(360deg);
+    }
+    100%{
+      color: red;
+    }
+  }
+  .for{
+    animation: two 4s infinite;
+    animation-time-fucntion: linear;
+  }
+  @keyframes for{
+    0%{
+      transform: scale(.2);
+    }
+    50%{
+      transform: rotateX(360deg);
+    }
+    100%{
+      color: red;
+    }
+  }
+  .time{
+    
+    
+  }
+  @keyframes time{
+    0%{
+      transform: scale(2.2);
+    }
+    50%{
+      transform: rotateX(360deg);
+    }
+    100%{
+      color: rgb(0, 0, 0);
+    }
+  }
+  
+  .palavra{
+    display: flex;
+    transform: translateX(0%);
+    animation: frase 7s infinite;
+    animation-delay: 4s;
+    animation-time-fucntion: linear;
+    animation-fill-mode: backwards;
+    color: #fff;
+  }
+  @keyframes frase{
+    0%{
+        transform: translateY(-500%) scale(0);
+        opacity: 0;  
+    }
+    100%{
+      transform: translateX(0) scale(1.2);
+      margin: 0 1em;
+      opacity: 1;
+    }
+  }
+  @media(max-width: 600px){
+      .letra{
+      font-size: 300%;
+    }
+  }
+  
